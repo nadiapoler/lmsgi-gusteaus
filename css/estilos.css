@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 #contenedor {
     background-color: #fff8f0;    
     font-family: 'Times New Roman', serif;
@@ -5,8 +10,105 @@
 
 }
 
+/* ::after es un pseudoelemento que evita problemas de desbordamiento */
+#contenedor::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
-div.encabezado {
-    background-image: url(../imgs/guesteaus.png);
+.contenido {
+    background-color: #fff8f0;
     color: #5a3e36;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    float: left;
+    width: 70%;
+    padding: 20px;
+    margin: 30px;
+    box-sizing: border-box;
+    border: 1px solid #5a3e36;
+}
+
+.encabezado {
+    background-image: url(../imgs/logo.png), url(../imgs/guesteaus.png);
+    background-size: 80px auto, cover;
+    background-position: left bottom, center bottom;
+    background-repeat: no-repeat, no-repeat;
+    height: 200px;
+    color: #5a3e36;
+    font-family: Georgia, serif;
+    font-size: 36px;
+    text-align: center;
+}
+
+.menu ul {
+    display: flex; /* Sirve para convertirlo en un contenedor flexible */
+    list-style-type: none;
+    justify-content: center;
+    background-color: #a77e58;
+
+}
+
+.menu ul li {
+    display: inline-block; /* Para mostrar los elementos en línea */
+}
+
+.menu ul li a {
+    display: block;
+    color: #ffffff;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 18px;
+    padding: 15px 20px;
+    text-decoration: none; /* De esta forma se borra el subrayado del enlace*/
+    transition: color 0.3s ease; /* Para hacer la trancisión del cambio de color que se ha indicado abajo*/
+}
+
+.menu ul li a:hover {
+    color:  #5a3e36;
+    background-color: #d7b384aa;
+    font-weight: bold;
+}
+
+.menu ul.cambio {
+    border-bottom: 2px solid #ffffff; 
+}
+
+/* Sirve para que el menú sea responsivo */
+@media only screen and (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu ul li {
+        margin-bottom: 12px;
+        display: block;
+    }
+}
+
+
+
+.sidebar {
+    margin: 40px;
+    background-color: #ecdcc6;
+    color: #5a3e36;
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    float: right;
+    width: 30%;
+    padding: 20px;
+    border: 1px solid #5a3e36;
+    box-sizing: border-box;
+    border-radius: 5%;
+}
+
+.pie {
+    padding: 15px;
+    margin: 40px;
+    background-color: #5a3e36;
+    color: #ecdcc6;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 16px;
+    text-align: center;
 }
