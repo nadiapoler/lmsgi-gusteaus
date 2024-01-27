@@ -7,7 +7,6 @@
     background-color: #fff8f0;    
     font-family: 'Times New Roman', serif;
     font-size: 16px;
-
 }
 
 /* ::after es un pseudoelemento que evita problemas de desbordamiento */
@@ -18,17 +17,36 @@
 }
 
 .contenido {
-    background-color: #fff8f0;
+    background-color: #faf0e3;
     color: #5a3e36;
     font-family: Georgia, serif;
     font-size: 18px;
     float: left;
     width: 61%;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 25px;
     margin: 30px 30px;
     box-sizing: border-box;
     border: 1px solid #5a3e36;
+    text-align: justify;
 }
+
+
+.contenido ul {
+    margin: 10px 0px 0px 40px;
+}
+
+.contenido ul li {
+    margin-bottom: 8px; /* Cambia el espacio del interlineado */
+}
+
+.contenido h1,
+.contenido h2,
+.contenido h3 {
+    margin: 25px 0px 7px 0px;
+}
+
 
 .encabezado {
     background-image: url(../imgs/logo.png), url(../imgs/guesteaus.png);
@@ -89,8 +107,6 @@
     }
 }
 
-
-
 .sidebar {
     background-color: #ecdcc6;
     color: #5a3e36;
@@ -100,9 +116,23 @@
     width: 30%;
     padding: 20px;
     margin: 30px 30px;
-    border: 1px solid #5a3e36;
-    box-sizing: border-box;
-    border-radius: 5%;
+    border: 10px solid #5a3e36;
+    border-style: double;
+    box-sizing: border-box; /* Controla el ancho y el alto del elemento */
+    text-align: justify;
+}
+
+.sidebar h2 {
+    margin-bottom: 7px;
+ 
+}
+
+.sidebar ul {
+    margin: 10px 0px 0px 40px;
+}
+
+.sidebar ul li {
+    margin-bottom: 8px; /* Puedes ajustar este valor según tu preferencia */
 }
 
 .pie {
