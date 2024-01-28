@@ -11,61 +11,66 @@
 
 <body>
 
-    <div class="encabezado">Restaurante Gusteau's</div>
-    <div class="menu">
-        <ul class="cambio">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="">Sobre Nosotros</a></li>
-            <li><a href="">Menú</a></li>
-            <li><a href="reservas.html">Reservas</a></li>
-            <li><a href="">Contacto</a></li>
-        </ul>
+    <div id="contenedor">
+        <div class="encabezado">Restaurante Gusteau's</div>
+        <div class="menu">
+            <ul class="cambio">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="">Sobre Nosotros</a></li>
+                <li><a href="">Menú</a></li>
+                <li><a href="menu_estrella.html">Menú Estrella</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </div>
+
+        <form method="post">
+
+            <fieldset>
+                <legend>Información personales</legend>
+
+                <label>Nombre:
+                    <input type="text" name="nombre" maxlength="70" required placeholder="Escriba su nombre">
+
+                </label>
+                <label>Apellidos:
+                    <input type="text" name="apellidos" maxlength="110" required placeholder="Escriba sus apellidos">
+                </label>
+                <label>Email:
+                    <input type="email" name="email" maxlength="80" required
+                        placeholder="Escriba su correo electrónico">
+                </label>
+                <label>Teléfono:
+                    <input type="tel" name="telefono" pattern="[0-9]{9}" required
+                        placeholder="Escriba su número de teléfono">
+                </label>
+
+            </fieldset>
+
+
+            <fieldset>
+                <legend>Reserva</legend>
+
+                <label>Número de personas:
+                    <input type="number" name="personas" maxlength="100" required min="1">
+                </label>
+                <label>Fecha:
+                    <input type="date" name="fecha" required>
+                </label>
+                <label>Hora de reserva:
+                    <input type="time" name="hora" required>
+                </label>
+                <label>Peticiones Especiales:
+                    <textarea name="nombre" rows="4" maxlength="500"></textarea>
+                </label>
+
+                <button type="submit" name="reservar">Reservar Mesa</button>
+
+            </fieldset>
+
+        </form>
+
     </div>
-
-    <form method="post">
-
-        <fieldset>
-            <legend>Información personales</legend>
-
-            <label>Nombre:
-                <input type="text" name="nombre" maxlength="70" required placeholder="Escriba su nombre">
-
-            </label>
-            <label>Apellidos:
-                <input type="text" name="apellidos" maxlength="110" required placeholder="Escriba sus apellidos">
-            </label>
-            <label>Email:
-                <input type="email" name="email" maxlength="80" required placeholder="Escriba su correo electrónico">
-            </label>
-            <label>Teléfono:
-                <input type="tel" name="telefono" pattern="[0-9]{9}" required
-                    placeholder="Escriba su número de teléfono">
-            </label>
-
-        </fieldset>
-
-
-        <fieldset>
-            <legend>Reserva</legend>
-
-            <label>Número de personas:
-                <input type="number" name="personas" maxlength="100" required min="1">
-            </label>
-            <label>Fecha:
-                <input type="date" name="fecha" required>
-            </label>
-            <label>Hora de reserva:
-                <input type="time" name="hora" required>
-            </label>
-            <label>Peticiones Especiales:
-                <textarea name="nombre" rows="4" maxlength="500"></textarea>
-            </label>
-
-            <button type="submit" name="reservar">Reservar Mesa</button>
-
-        </fieldset>
-
-    </form>
 
 </body>
 
