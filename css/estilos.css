@@ -4,7 +4,7 @@
 }
 
 #contenedor {
-    background-color: #fff8f0;    
+    background-color: #fff8f0;
     font-family: 'Times New Roman', serif;
     font-size: 16px;
 }
@@ -38,7 +38,8 @@
 }
 
 .contenido ul li {
-    margin-bottom: 8px; /* Cambia el espacio del interlineado */
+    margin-bottom: 8px;
+    /* Cambia el espacio del interlineado */
 }
 
 .contenido h1,
@@ -63,7 +64,8 @@
 
 
 .menu ul {
-    display: flex; /* Sirve para convertirlo en un contenedor flexible */
+    display: flex;
+    /* Sirve para convertirlo en un contenedor flexible */
     list-style-type: none;
     justify-content: center;
     background-color: #a77e58;
@@ -71,7 +73,8 @@
 }
 
 .menu ul li {
-    display: inline-block; /* Para mostrar los elementos en línea */
+    display: inline-block;
+    /* Para mostrar los elementos en línea */
 }
 
 .menu ul li a {
@@ -80,18 +83,20 @@
     font-family: 'Helvetica', sans-serif;
     font-size: 18px;
     padding: 15px 20px;
-    text-decoration: none; /* De esta forma se borra el subrayado del enlace*/
-    transition: color 0.3s ease; /* Para hacer la trancisión del cambio de color que se ha indicado abajo*/
+    text-decoration: none;
+    /* De esta forma se borra el subrayado del enlace*/
+    transition: color 0.3s ease;
+    /* Para hacer la trancisión del cambio de color que se ha indicado abajo*/
 }
 
 .menu ul li a:hover {
-    color:  #5a3e36;
+    color: #5a3e36;
     background-color: #d7b384aa;
     font-weight: bold;
 }
 
 .menu ul.cambio {
-    border-bottom: 2px solid #ffffff; 
+    border-bottom: 2px solid #ffffff;
 }
 
 /* Sirve para que el menú sea responsivo */
@@ -118,13 +123,14 @@
     margin: 30px 30px;
     border: 10px solid #5a3e36;
     border-style: double;
-    box-sizing: border-box; /* Controla el ancho y el alto del elemento */
+    box-sizing: border-box;
+    /* Controla el ancho y el alto del elemento */
     text-align: justify;
 }
 
 .sidebar h2 {
     margin-bottom: 7px;
- 
+
 }
 
 .sidebar ul {
@@ -132,11 +138,13 @@
 }
 
 .sidebar ul li {
-    margin-bottom: 8px; /* Puedes ajustar este valor según tu preferencia */
+    margin-bottom: 8px;
+    /* Puedes ajustar este valor según tu preferencia */
 }
 
 .pie {
-    clear: both; /* Sirve para que el pie de página se coloque debajo de la clase sidebar y contenido */
+    clear: both;
+    /* Sirve para que el pie de página se coloque debajo de la clase sidebar y contenido */
     padding: 15px;
     margin: 30px;
     background-color: #5a3e36;
